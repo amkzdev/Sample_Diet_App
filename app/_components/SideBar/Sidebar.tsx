@@ -17,7 +17,7 @@ export const Sidebar = () => {
     const remainingDay = 15
 
     return (
-        <div className='p-0.5 from-cr2 to-white bg-linear-to-b to-ri rounded-2xl   w-64  h-[90vh] flex flex-col items-stretch justify-stretch'>
+        <div className='p-0.5 from-cr2 to-white bg-linear-to-b to-ri rounded-2xl   w-72  h-[90vh] flex flex-col items-stretch justify-stretch'>
 
             <div className='flex flex-col gap-3 items-stretch rounded-[14px] bg-[#FAFFF4] h-full   flex-1 p-3 '>
                 <div className='flex flex-row gap-4 items-center justify-between w-full  p-3 pl-0 mb-2'>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Sidebar } from "@components";
+import { Header, Sidebar } from "@components";
 import { peydaFont } from "@font";
 
 
@@ -16,15 +16,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl">
+    <html lang="fa" dir="rtl" className="text-[14px]">
       <body
-        className={`${peydaFont.className}  antialiased container mx-auto border-t-4 border-t-cr2 py-5 px-3`}
+        className={`${peydaFont.className}   container w-full max-w-[85rem] mx-auto border-t-4 border-t-cr2 py-5 px-3`}
       >
-        <div className="flex flex-row gap-6 items-start">
+        <div className="flex flex-row gap-9 items-start">
 
           <Sidebar />
 
-          <div>
+          <div className="flex flex-col gap-2 flex-1">
+
+            <Header />
+
+            <div className="w-full h-[1px] bg-[#F4F4F4]"></div>
+
             {children}
           </div>
         </div>
