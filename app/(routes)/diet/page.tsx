@@ -1,4 +1,4 @@
-import { Diet } from '@/app/Views'
+import { Diet } from '@views'
 import { Metadata } from 'next'
 import React from 'react'
 
