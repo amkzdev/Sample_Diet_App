@@ -1,11 +1,13 @@
 import React from 'react'
-import { Hero } from './components'
+import { Hero, Share } from './components'
 
 export const Diet = () => {
   return (
-    <div className='flex flex-col gap-4 items-stretch py-4'>
+    <div className='flex flex-col gap-6 items-stretch py-4'>
 
       <Hero/>
+
+      <Share/>
       
     </div>
   )
