@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl" className="text-[14px]">
       <body
-        className={`${peydaFont.className}   container w-full max-w-[85rem] mx-auto border-t-4 border-t-cr2 py-5 px-3`}
+        className={`${peydaFont.className}   container w-full max-w-[100rem] mx-auto border-t-4 border-t-cr2 py-5 px-3`}
       >
         <div className="flex flex-row gap-9 items-start">
 
