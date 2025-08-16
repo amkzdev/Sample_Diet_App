@@ -1,4 +1,4 @@
-import { Button } from '@components'
+import { Button, Divider } from '@components'
 import { shareData } from '_views/Diet/data.mock'
 import React from 'react'
 import { EachShare } from './components/EachShare'
@@ -16,7 +16,7 @@ export const Share = () => {
 
             </div>
 
-            <div className='w-full h-[1px] bg-[#F4F4F4]'></div>
+            <Divider/>
 
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
                 {shareData.map(item => <div className='col-span-1'>
