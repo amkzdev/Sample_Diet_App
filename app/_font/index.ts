@@ -13,7 +13,7 @@ export const peydaFont = localFont({
         style: 'normal',
       },
       {
-        path: './PeydaWeb-light.woff',
+        path: './peydaWeb-light.woff',
         weight: '300',
         style: 'normal',
       },

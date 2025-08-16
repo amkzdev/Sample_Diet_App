@@ -6,6 +6,9 @@ import peanut from '@images/Food/peanut.png'
 import meal1 from '@images/meal/1.png'
 import meal2 from '@images/meal/2.png'
 import meal3 from '@images/meal/3.png'
+import { ILocalIconType } from "_icons/type"
+import { Milk, Olive } from "@icons"
+import { Nuts } from "_icons/Nuts"
 
 export const dietData = {
     method: 'رژیم عادی',
@@ -57,12 +60,13 @@ export const weekDaysData: Array<{ title: string, day: number, active?: boolean,
     }
 ]
 
-export const shareData: Array<{ title: string, usage: string, menu: string, img: StaticImageData }> = [
+export const shareData: Array<{ title: string, usage: string, menu: string, img: StaticImageData, icon:ILocalIconType }> = [
     {
         title: "لبنیات",
         img: milk,
         menu: 'دو لیوان شیر کامل (۳ درصد)',
-        usage: 'به سلیقه خودتان (به عنوان میان وعده یا همراه وعده)'
+        usage: 'به سلیقه خودتان (به عنوان میان وعده یا همراه وعده)',
+        icon:Milk
     }
 
     ,
@@ -70,14 +74,16 @@ export const shareData: Array<{ title: string, usage: string, menu: string, img:
         img: olive,
         menu: '۱ قاشق مرباخوری روغن زیتون (ترجیحا تصویه نشده)',
         title: 'روغن زیتون',
-        usage: 'همراه با سالاد'
+        usage: 'همراه با سالاد',
+        icon:Olive
     }
     ,
     {
         img: peanut,
         menu: '۲.۵ قاشق غذاخوری مغز مخلوط (قاشق غذاخوری مغز معادل: ۱۰ گرم)',
         title: 'آجیل',
-        usage: '(به صورت ریزه خوری در طی روز)'
+        usage: '(به صورت ریزه خوری در طی روز)',
+        icon:Nuts
     }
 ]
 

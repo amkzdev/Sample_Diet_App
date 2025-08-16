@@ -17,7 +17,7 @@ export const Sidebar = () => {
     const remainingDay = 15
 
     return (
-        <div className='p-0.5 from-cr2 to-white bg-linear-to-b to-ri rounded-2xl   w-72  h-[90vh] flex flex-col items-stretch justify-stretch'>
+        <div className='p-0.5 from-cr2 to-white bg-linear-to-b to-ri rounded-2xl   w-72  h-[95vh] flex flex-col items-stretch justify-stretch'>
 
             <div className='flex flex-col gap-3 items-stretch rounded-[14px] bg-[#FAFFF4] h-full   flex-1 p-3 '>
                 <div className='flex flex-row gap-4 items-center justify-between w-full  p-3 pl-0 mb-2'>
@@ -36,7 +36,7 @@ export const Sidebar = () => {
                 {menuItems.map(({ icon: Icon, route, title }) => {
 
                     const isSelected = route == pathname
-                    return <Link href={route} key={route} className={clsx('flex flex-row gap-3 items-center rounded-xl p-4  font-bold ', isSelected ? ' text-white bg-cr2 ' : 'text-cr2 hover:bg-green-50')}>
+                    return <Link href={route} key={route} className={clsx('flex flex-row gap-3 items-center rounded-xl p-4  font-bold ', isSelected ? ' !text-white bg-cr2 ' : '!text-cr2 hover:bg-green-50')}>
 
                         <Icon className='size-6' />
                         <span>{title}</span>
@@ -48,7 +48,7 @@ export const Sidebar = () => {
                 <div className='mt-auto flex flex-col  gap-4'>
 
                     <div className='bg-cr2  h-40   rounded-[0.875rem] relative flex flex-col justify-end p-4'>
-                        <Image alt='Salad' width={140} height={180} className='mx-auto absolute left-1/2 -translate-y-1/3 -translate-x-1/2' src={saladImg} />
+                        <Image alt='Salad' width={140} height={180} className='mx-auto absolute left-1/2 !-translate-y-1/3 !-translate-x-1/2' src={saladImg} />
                         <div className='flex flex-row gap-1 items-center text-white text-center justify-center font-bold '>
                             <span>روز</span>
 
@@ -62,7 +62,7 @@ export const Sidebar = () => {
 
                     <div className='w-full bg-gray-300 h-[1px]'></div>
 
-                    <Link href={'/'} className={clsx('flex flex-row gap-3 items-center rounded-xl  px-4 font-bold ', 'text-cr2')}>
+                    <Link href={'/'} className={clsx('flex flex-row gap-3 items-center rounded-xl  px-4 font-bold ', '!text-cr2')}>
 
                         <Exit className='size-6' />
                         <span>خروج</span>
