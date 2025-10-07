@@ -20,7 +20,7 @@ git clone https://github.com/amkzdev/Diet_Tracker_Demo_NextJS.git
 ```
 Navigate into the Project Directory:
 ```bash
-cd diet-tracker-demo
+cd Diet_Tracker_Demo_NextJS
 ```
 Install Dependencies:
 ```bash
