@@ -16,7 +16,7 @@ To run this demo project locally, follow these steps:
 
 Clone the Repository:
 ```bash
-git clone https://github.com/yourusername/diet-tracker-demo.git
+git clone https://github.com/amkzdev/Diet_Tracker_Demo_NextJS.git
 ```
 Navigate into the Project Directory:
 ```bash
